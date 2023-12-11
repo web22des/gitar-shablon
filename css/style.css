@@ -201,6 +201,24 @@ h6 {
   border-radius: 1rem;
 }
 
+.border-xy-3 {
+  border: 3px solid #E0C424;
+  border-radius: 1rem;
+}
+
+.border-xx00-3 {
+  border: 3px solid #E0C424;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.border-0xxx-3 {
+  border: 3px solid #E0C424;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
 .card-title-1 {
   font-family: "Inter";
   font-weight: 700;
@@ -1120,6 +1138,121 @@ h6 {
   }
 }
 
+.bem-block-07__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bem-block-07__col {
+  max-width: 50%;
+  width: 100%;
+}
+
+.bem-block-07__images {
+  overflow: hidden;
+}
+
+.bem-block-07__img {
+  width: 100%;
+  height: auto;
+}
+
+.bem-block-07__list {
+  font-family: "OpenSans";
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.0625rem;
+}
+
+@supports (font-size: clamp( 1.125rem , 1.0840163934rem  +  0.2049180328vw , 1.25rem )) {
+  .bem-block-07__list {
+    font-size: clamp( 1.125rem , 1.0840163934rem  +  0.2049180328vw , 1.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.125rem , 1.0840163934rem  +  0.2049180328vw , 1.25rem )) {
+  .bem-block-07__list {
+    font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 61);
+  }
+}
+
+.bem-block-07__list li {
+  margin-bottom: 0.75rem;
+}
+
+.bem-block-07__btn {
+  text-align: center;
+}
+
+.bem-block-07__info {
+  margin-bottom: -0.1875rem;
+  display: inline-block;
+  background-color: #E0C424;
+  padding: 32px 32px 4px 32px;
+  color: #fff;
+}
+
+.bem-block-07__flex-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bem-block-07__flex-col-3 {
+  max-width: 33%;
+  width: 100%;
+  text-align: center;
+}
+
+.bem-block-07__images {
+  margin-bottom: 1.5rem;
+}
+
+.bem-block-07__title {
+  font-family: "Inter";
+  font-weight: 700;
+  line-height: 130%;
+  color: #E0C424;
+}
+
+@supports (font-size: clamp( 1.875rem , 1.7520491803rem  +  0.6147540984vw , 2.25rem )) {
+  .bem-block-07__title {
+    font-size: clamp( 1.875rem , 1.7520491803rem  +  0.6147540984vw , 2.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.875rem , 1.7520491803rem  +  0.6147540984vw , 2.25rem )) {
+  .bem-block-07__title {
+    font-size: calc(1.875rem + 0.375 * (100vw - 20rem) / 61);
+  }
+}
+
+.bem-block-07__text {
+  margin: 0 auto;
+  max-width: 70%;
+  font-family: "OpenSans";
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.0625rem;
+}
+
+@supports (font-size: clamp( 1.125rem , 1.0840163934rem  +  0.2049180328vw , 1.25rem )) {
+  .bem-block-07__text {
+    font-size: clamp( 1.125rem , 1.0840163934rem  +  0.2049180328vw , 1.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.125rem , 1.0840163934rem  +  0.2049180328vw , 1.25rem )) {
+  .bem-block-07__text {
+    font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 61);
+  }
+}
+
 body {
   background-color: #fff;
   color: #000;
@@ -1360,6 +1493,18 @@ body {
   .bem-block-06__images:not(:last-child) {
     margin-bottom: 0;
   }
+
+  .bem-block-07__flex {
+    display: block;
+  }
+
+  .bem-block-07__col {
+    max-width: 100%;
+  }
+
+  .bem-block-07__images {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 59.375em) {
@@ -1378,6 +1523,33 @@ body {
 
   .bem-block-04__promo-images {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 51.875em) {
+  .border-0xxx-3 {
+    border-top-right-radius: 0rem;
+  }
+
+  .bem-block-07__info {
+    display: block;
+  }
+
+  .bem-block-07__flex-3 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .bem-block-07__flex-col-3 {
+    max-width: 50%;
+    margin-bottom: 1.5rem;
+  }
+
+  .bem-block-07__flex-col-3:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -1480,6 +1652,12 @@ body {
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
+  }
+}
+
+@media (max-width: 32.5em) {
+  .bem-block-07__flex-col-3 {
+    max-width: 100%;
   }
 }
 
