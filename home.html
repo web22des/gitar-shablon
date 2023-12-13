@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231212020946">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231213142906">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -368,6 +368,107 @@
 					</div>
 				</div>
 			</section>
+			<section class="bem-form-01 py-section">
+				<div class="bem-form-01__container">
+					<div class="section__info pb-15">
+						<!-- <p class="section__subtitle">Остались вопросы? Заполните форму и мы с вами свяжемся. Или просто свяжитесь с
+                нами по телефону</p> -->
+						<h2 class="section__title">Контакты</h2>
+					</div>
+					<div class="bem-form-01__flex">
+						<div class="bem-form-01__col">
+							<form class="form pp-card">
+								<div class="form__body" acttion="#" id="form">
+									<p class="form__title">Оставить заявку</p>
+									<div class="form__item">
+										<label for="formName" class="form__ladel">Имя*:</label>
+										<input type="text" id="formName" name="name" class="form__input br-1">
+									</div>
+									<div class="form__item">
+										<label for="formEmail" class="form__ladel">E-mail*:</label>
+										<input type="text" id="formEmail" name="email" class="form__input br-1">
+									</div>
+
+
+									<div class="form__item">
+										<div class="form__label">Левша или правша</div>
+										<div class="options">
+											<div class="options__item">
+												<input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">
+												<label for="formRightHanded" class="options__label"><span>Правша</span></label>
+											</div>
+											<div class="options__item">
+												<input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+												<label for="formLeftHanded" class="options__label"><span>Левша</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form__item">
+									<label for="formMessage" class="form__ladel">Сообщение*:</label>
+									<textarea class="form__input br-1" name="message" id="formMessage"></textarea>
+								</div>
+								<div class="form__item">
+									<div class="form__label">Возраст</div>
+									<!-- <select name="age" id="" class="select">
+                            <option value="от 18 до 25">Молодой</option>
+                            <option value="от 25 до 45">Старый</option>
+                            <option value="от 45">Супер стар</option>
+                        </select> -->
+									<select name="form[]" class="select">
+										<option value="1" selected>Пункт №1</option>
+										<option value="2">Пункт №2</option>
+										<option value="3">Пункт №3</option>
+										<option value="4">Пункт №4</option>
+									</select>
+								</div>
+								<div class="form__item">
+									<div class="form__label">Прикрепить фото</div>
+									<div class="file">
+										<div class="file__item">
+											<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+											<div class="file__button">Выбрать</div>
+										</div>
+										<div class="file__preview"></div>
+									</div>
+								</div>
+								<div class="form__item">
+									<!-- <div class="checkbox">
+                            <input checked id="formAgreement" type="checkbox" name="agreement" class="checkbox__input">
+                            <label for="formAgreement" class="checkbox__ladel">Согласие на обработку персональных
+                                данных</label>
+                        </div> -->
+									<div class="checkbox">
+										<input checked id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<label for="c_1" class="checkbox__label"><span class="checkbox__text">Согласие на обработку
+												персональных
+												данных</span></label>
+									</div>
+								</div>
+								<button type="submit" class="form__button">Отправить</button>
+							</form>
+
+						</div>
+						<div class="bem-form-01__col"></div>
+					</div>
+				</div>
+			</section>
+			<div class="test__container">
+
+				<div class="quantity">
+					<button type="button" class="quantity__button quantity__button_plus">button-1</button>
+					<div class="quantity__input">
+						<input autocomplete="off" type="text" name="form[]" value="1">
+					</div>
+					<button type="button" class="quantity__button quantity__button_minus">button-2</button>
+				</div>
+			</div>
+
+
+
+			<!-- 
+    https://youtu.be/PqTrhfjLQBI?si=8Aaipm2v5Y1ozTZR&t=985
+-->
 
 		</main>
 		<footer class="footer">
@@ -375,7 +476,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231212020946"></script>
+	<script src="js/app.min.js?_v=20231213142906"></script>
 </body>
 
 </html>
